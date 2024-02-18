@@ -5,7 +5,7 @@ import { postRequestHeader } from "../header/requestHeader.js";
 import { registrationRequestBody } from "../body/requestBody.js";
 
 describe('API Test', () =>{
-    it('Return success', async () =>{
+    it('Check the Endpoint (Success/200)', async () =>{
         const response = await fetch(`${url}`);
 
         const output = await response.json();
@@ -18,7 +18,7 @@ describe('API Test', () =>{
         expect(output.data).to.have.property('version');
     });
 
-    it('Return fail', async () =>{
+    it('Check the Endpoint (Fail/404', async () =>{
         const response = await fetch(`${url}/1`);
         const output = await response.json();
 
@@ -27,7 +27,7 @@ describe('API Test', () =>{
     });
 
 
-    it('Should successfully register user with POST request', async () => {
+    it('Register New Member (Post)', async () => {
         const response = await fetch(`${url}/registration`, {
             method: 'POST',
             headers: postRequestHeader,
