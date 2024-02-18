@@ -34,14 +34,6 @@ describe('API Test', () =>{
             body: JSON.stringify(registrationRequestBody),
         });
 
-        //log the request and url
-        // console.log('Registration URL:', registrationUrl);
-        //     console.log('Registration Request:', {
-        //         method: 'POST',
-        //         headers: postRequestHeader,
-        //         body: requestBody,
-        // });
-
         const output = await response.json();
 
         //console.log('Response :', output);
