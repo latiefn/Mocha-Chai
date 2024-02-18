@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha tests/api.test.js"
+    "test": "mocha kasiraja/api.js"
   },
   "keywords": [],
   "author": "",

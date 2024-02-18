@@ -10,7 +10,7 @@ describe('API Testing', () => {
     const data = await response.json();
 
     // Log or print the API response
-    //console.log('API Response:', data);
+    console.log('API Response:', data);
 
     expect(response.status).to.equal(200);
     expect(data).to.have.property('userId');
@@ -24,7 +24,7 @@ describe('API Testing', () => {
     const data = await response.json();
 
         // Log or print the API response
-        //console.log('API Response:', data);
+        console.log('API Response:', data);
 
     expect(response.status).to.equal(200);
     expect(data).to.have.property('id');
