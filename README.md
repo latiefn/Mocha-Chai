@@ -1,4 +1,4 @@
-# API-Automation-Mocha-Chai
+# Mocha Chai
 
 Edit run test file
 - go to package.json
@@ -20,3 +20,8 @@ Instal Allure
 
 Run the test and save the result to mochawesome
 - npm run test:allure
+
+Command git
+- git add .
+- git commit -m "xxx"
+- git push origin master
