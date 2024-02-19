@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha kasiraja/api.js"
+    "test": "mocha kasiraja/api.js",
+    "test:mochawesome": "mocha kasiraja/api.js --reporter mochawesome",
+    "test:allure": "mocha kasiraja/api.js --timeout 5000 --reporter mocha-allure-reporter && allure generate --clean && allure open"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +16,11 @@
     "chai": "^5.1.0",
     "mocha": "^10.3.0",
     "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.27.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }
