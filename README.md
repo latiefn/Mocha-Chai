@@ -25,3 +25,12 @@ Command git
 - git add .
 - git commit -m "xxx"
 - git push origin master
+
+add new branch
+- git checkout -b new-branch-name
+- git add .
+- git commit -m "xxx"
+
+Switch branch
+- git checkout branch-name
+- git push origin new-branch-name
