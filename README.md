@@ -38,4 +38,6 @@ Switch branch
 Merge branch
 - git checkout target-branch
 - git merge source-branch
-- git merge --continue (resolve any conficts if needed)
+- git merge --continue (resolve any conflicts && if needed)
+- git commit -m "xxx" (after resolve conflicts && ig needed)
+- git push origin branch
