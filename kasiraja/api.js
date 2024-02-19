@@ -18,7 +18,7 @@ describe('API Test', () =>{
         expect(output.data).to.have.property('version');
     });
 
-    it('Check the Endpoint (Fail/404', async () =>{
+    it('Check the Endpoint (Fail/404)', async () =>{
         const response = await fetch(`${url}/1`);
         const output = await response.json();
 
