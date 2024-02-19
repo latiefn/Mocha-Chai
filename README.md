@@ -39,5 +39,11 @@ Merge branch
 - git checkout target-branch
 - git merge source-branch
 - git merge --continue (resolve any conflicts && if needed)
-- git commit -m "xxx" (after resolve conflicts && ig needed)
+- git commit -m "xxx" (after resolving conflicts && if needed)
 - git push origin branch
+
+Pull code
+- git status
+- git pull origin branch-name
+- git merge --continue (resolve any conflicts && if needed)
+- git status
