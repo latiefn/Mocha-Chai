@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1708418088324' stop='1708418089207'>
+    <name>API Test</name>
+    <title>API Test</title>
+    <test-cases>
+        <test-case start='1708418088324' status='passed' stop='1708418088774'>
+            <name>Check the Endpoint (Success/200)</name>
+            <title>Check the Endpoint (Success/200)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1708418088774' status='passed' stop='1708418088819'>
+            <name>Check the Endpoint (Fail/404)</name>
+            <title>Check the Endpoint (Fail/404)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1708418088819' status='passed' stop='1708418089205'>
+            <name>Register New Member (Post)</name>
+            <title>Register New Member (Post)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

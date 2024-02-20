@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha kasiraja/api.js --timeout 200",
+    "test": "mocha kasiraja/api.js --timeout 2000",
     "test:mochawesome": "mocha kasiraja/api.js --timeout 20000 --reporter mochawesome --clean",
     "test:allure": "mocha kasiraja/api.js --timeout 5000 --reporter mocha-allure-reporter && allure generate --clean && allure open"
   },

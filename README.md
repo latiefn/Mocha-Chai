@@ -23,7 +23,7 @@ Run the test and save the result to mochawesome
 Instal Allure (Reporting)
 - npm install --save-dev mocha-allure-reporter
 - npm install --save-dev allure-commandline
-- update the package.json file (to make easy to run:     "test:allure": "mocha kasiraja/api.js --timeout 5000 --reporter mocha-allure-reporter && allure generate --clean && allure open" )
+- update the package.json file (to make easy to run: "test:allure": "mocha kasiraja/api.js --timeout 5000 --reporter mocha-allure-reporter && allure generate --clean && allure open" )
 
 Run the test and save the result to mochawesome
 - npm run test:allure
