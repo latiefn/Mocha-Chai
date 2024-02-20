@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 3,
-    "passes": 2,
+    "passes": 3,
     "pending": 0,
-    "failures": 1,
-    "start": "2024-02-19T10:07:02.218Z",
-    "end": "2024-02-19T10:07:05.741Z",
-    "duration": 3523,
+    "failures": 0,
+    "start": "2024-02-20T07:29:45.561Z",
+    "end": "2024-02-20T07:29:46.151Z",
+    "duration": 590,
     "testsRegistered": 3,
-    "passPercent": 66.66666666666666,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "71e4ec7c-fe3b-4afb-99c2-80e8cb4a5343",
+      "uuid": "7a4fc9ae-3c9a-4dc9-bc6d-21aa4a454578",
       "title": "",
       "fullFile": "/Users/latief/Documents/chai again/kasiraja/api.js",
       "file": "/kasiraja/api.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6f044ffa-f524-42e0-ba33-9ea8667562e1",
+          "uuid": "2f8d16e8-d882-46c0-9147-d70c5aae5c64",
           "title": "API Test",
           "fullFile": "/Users/latief/Documents/chai again/kasiraja/api.js",
           "file": "/kasiraja/api.js",
@@ -37,22 +37,18 @@
             {
               "title": "Check the Endpoint (Success/200)",
               "fullTitle": "API Test Check the Endpoint (Success/200)",
-              "timedOut": true,
-              "duration": 2021,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "timedOut": false,
+              "duration": 165,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const response = await fetch(`${url}`);\nconst output = await response.json();\n//console.log('Response :', output);\nexpect(response.status).to.equal(200);\nexpect(output.data).to.have.property('status');\nexpect(output.data).to.have.property('name');\nexpect(output.data).to.have.property('version');",
-              "err": {
-                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/latief/Documents/chai again/kasiraja/api.js)",
-                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/latief/Documents/chai again/kasiraja/api.js)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)",
-                "diff": null
-              },
-              "uuid": "cb9d9a98-01bc-42c4-93b0-1ab5a98d0ee3",
-              "parentUUID": "6f044ffa-f524-42e0-ba33-9ea8667562e1",
+              "err": {},
+              "uuid": "ad417702-c086-40b0-b53d-1eaf3137b653",
+              "parentUUID": "2f8d16e8-d882-46c0-9147-d70c5aae5c64",
               "isHook": false,
               "skipped": false
             },
@@ -60,17 +56,17 @@
               "title": "Check the Endpoint (Fail/404)",
               "fullTitle": "API Test Check the Endpoint (Fail/404)",
               "timedOut": false,
-              "duration": 1071,
+              "duration": 42,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "const response = await fetch(`${url}/1`);\nconst output = await response.json();\n//console.log('Response: ', output);\nexpect(response.status).to.equal(404);",
               "err": {},
-              "uuid": "26b1b97a-e3c0-4f12-80f4-2ad8af7c38f3",
-              "parentUUID": "6f044ffa-f524-42e0-ba33-9ea8667562e1",
+              "uuid": "35269116-a080-4030-b32a-5912c9c4d5d8",
+              "parentUUID": "2f8d16e8-d882-46c0-9147-d70c5aae5c64",
               "isHook": false,
               "skipped": false
             },
@@ -78,35 +74,34 @@
               "title": "Register New Member (Post)",
               "fullTitle": "API Test Register New Member (Post)",
               "timedOut": false,
-              "duration": 424,
+              "duration": 378,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const response = await fetch(`${url}/registration`, {\n    method: 'POST',\n    headers: postRequestHeader,\n    body: JSON.stringify(registrationRequestBody),\n});\nconst output = await response.json();\n//console.log('Response :', output);\n// Add assertions for the registration response\nexpect(response.status).to.equal(201);\nexpect(output).to.have.property('status');\nexpect(output).to.have.property('message');\nexpect(output.data).to.have.property('name');\nexpect(output.data).to.have.property('email')",
+              "code": "const response = await fetch(`${url}/registration`, {\n    method: 'POST',\n    headers: postRequestHeader,\n    body: JSON.stringify(registrationRequestBody),\n});\nconst output = await response.json();\n//console.log('Response :', output);\nexpect(response.status).to.equal(201);\nexpect(output).to.have.property('status');\nexpect(output).to.have.property('message');\nexpect(output.data).to.have.property('name');\nexpect(output.data).to.have.property('email')",
               "err": {},
-              "uuid": "525eee8b-4d05-4289-95ca-eac768201d0b",
-              "parentUUID": "6f044ffa-f524-42e0-ba33-9ea8667562e1",
+              "uuid": "9fe7fb41-3f71-4140-963f-2bf91637a722",
+              "parentUUID": "2f8d16e8-d882-46c0-9147-d70c5aae5c64",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "26b1b97a-e3c0-4f12-80f4-2ad8af7c38f3",
-            "525eee8b-4d05-4289-95ca-eac768201d0b"
+            "ad417702-c086-40b0-b53d-1eaf3137b653",
+            "35269116-a080-4030-b32a-5912c9c4d5d8",
+            "9fe7fb41-3f71-4140-963f-2bf91637a722"
           ],
-          "failures": [
-            "cb9d9a98-01bc-42c4-93b0-1ab5a98d0ee3"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3516,
+          "duration": 585,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 2000
+          "_timeout": 20000
         }
       ],
       "passes": [],
@@ -116,7 +111,7 @@
       "duration": 0,
       "root": true,
       "rootEmpty": true,
-      "_timeout": 2000
+      "_timeout": 20000
     }
   ],
   "meta": {

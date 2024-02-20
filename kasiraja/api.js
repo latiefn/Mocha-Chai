@@ -37,8 +37,6 @@ describe('API Test', () =>{
         const output = await response.json();
 
         //console.log('Response :', output);
-
-        // Add assertions for the registration response
         expect(response.status).to.equal(201);
         expect(output).to.have.property('status');
         expect(output).to.have.property('message');

@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha kasiraja/api.js",
-    "test:mochawesome": "mocha kasiraja/api.js --reporter mochawesome",
+    "test": "mocha kasiraja/api.js --timeout 200",
+    "test:mochawesome": "mocha kasiraja/api.js --timeout 20000 --reporter mochawesome --clean",
     "test:allure": "mocha kasiraja/api.js --timeout 5000 --reporter mocha-allure-reporter && allure generate --clean && allure open"
   },
   "keywords": [],
