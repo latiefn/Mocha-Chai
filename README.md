@@ -28,7 +28,7 @@ Instal Allure (Reporting)
 Run the test and save the result to mochawesome
 - npm run test:allure
 
-Command git
+Commit git
 - git add .
 - git commit -m "xxx"
 - git push origin master
