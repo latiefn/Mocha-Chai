@@ -3,6 +3,8 @@ import fetch from "node-fetch";
 import { url } from "../url/url.js";
 import { postRequestHeader } from "../header/requestHeader.js";
 import { loginRequestBody, registrationRequestBody } from "../body/requestBody.js";
+import { login } from "../body/auth.data.js";
+import { performLoginTest } from '../url/performlogin.js';
 
 describe('API Test', () =>{
     it('Check the Endpoint (Success/200)', async () =>{
@@ -45,26 +47,9 @@ describe('API Test', () =>{
 
     });
 
-    it('Login Existing Member (POST)', async () => {
-        const response = await fetch(`${url}/authentications`, {
-            method: 'POST',
-            headers: postRequestHeader,
-            body: JSON.stringify(loginRequestBody),
+    login.forEach(testCase => {
+        it(`should perform login test - ${testCase.case.title}`, async () => {
+            await performLoginTest(url, postRequestHeader, testCase);
         });
-        const output = await response.json();
-
-        //console.log('Response :', output);
-
-        expect(response.status).to.equal(201);
-        expect(output.data).to.have.property('accessToken');
-        expect(output.data).to.have.property('refreshToken');
-        expect(output.data.user).to.have.property('id');
-        expect(output.data.user).to.have.property('name');
-        expect(output.data.user).to.have.property('role');
-        expect(output.data.user).to.have.property('email');
-        expect(output.data.user).to.have.property('officeId');
-        expect(output.data.user).to.have.property('companyId');
-        expect(output.data.user).to.have.property('company_name');
     });
-
 });

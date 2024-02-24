@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1708785188789' stop='1708785190514'>
+    <name>API Test</name>
+    <title>API Test</title>
+    <test-cases>
+        <test-case start='1708785188789' status='passed' stop='1708785189079'>
+            <name>Check the Endpoint (Success/200)</name>
+            <title>Check the Endpoint (Success/200)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1708785189080' status='passed' stop='1708785189218'>
+            <name>Check the Endpoint (Fail/404)</name>
+            <title>Check the Endpoint (Fail/404)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1708785189218' status='passed' stop='1708785189582'>
+            <name>Register New Member (Post)</name>
+            <title>Register New Member (Post)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1708785189582' status='passed' stop='1708785189970'>
+            <name>should perform login test - Success</name>
+            <title>should perform login test - Success</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1708785189970' status='passed' stop='1708785190033'>
+            <name>should perform login test - failed password empty</name>
+            <title>should perform login test - failed password empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1708785190033' status='passed' stop='1708785190477'>
+            <name>should perform login test - Wrong password</name>
+            <title>should perform login test - Wrong password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1708785190478' status='passed' stop='1708785190514'>
+            <name>should perform login test - Email empty</name>
+            <title>should perform login test - Email empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
