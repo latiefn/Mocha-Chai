@@ -12,7 +12,7 @@ describe('API Test', () =>{
 
         //console.log('Response :', output);
 
-        expect(response.status).to.equal(201);
+        expect(response.status).to.equal(200);
         expect(output.data).to.have.property('status');
         expect(output.data).to.have.property('name');
         expect(output.data).to.have.property('version');
