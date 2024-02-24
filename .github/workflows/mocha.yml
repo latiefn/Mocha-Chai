@@ -1,9 +1,14 @@
 name: Mocha Tests
 
 on:
-  push:
+  pull_request:
     branches:
-      - master  # Replace with your main branch name
+      - master
+
+# on:
+#   push:
+#     branches:
+#       - master  # Replace with your main branch name
 
 jobs:
   test:
