@@ -1,4 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Feb 23 17:41:26 WIB 2024","Fri Feb 23 17:41:27 WIB 2024","525","","API Test","","API Test","Register New Member (Post)","Register New Member (Post)",""
-"passed","Fri Feb 23 17:41:26 WIB 2024","Fri Feb 23 17:41:26 WIB 2024","160","","API Test","","API Test","Check the Endpoint (Fail/404)","Check the Endpoint (Fail/404)",""
-"passed","Fri Feb 23 17:41:25 WIB 2024","Fri Feb 23 17:41:26 WIB 2024","617","","API Test","","API Test","Check the Endpoint (Success/200)","Check the Endpoint (Success/200)",""
+"passed","Sat Feb 24 17:42:08 WIB 2024","Sat Feb 24 17:42:08 WIB 2024","410","","API Test","","API Test","Login Existing Member (POST)","Login Existing Member (POST)",""
+"passed","Sat Feb 24 17:42:07 WIB 2024","Sat Feb 24 17:42:08 WIB 2024","463","","API Test","","API Test","Register New Member (Post)","Register New Member (Post)",""
+"passed","Sat Feb 24 17:42:07 WIB 2024","Sat Feb 24 17:42:07 WIB 2024","185","","API Test","","API Test","Check the Endpoint (Fail/404)","Check the Endpoint (Fail/404)",""
+"passed","Sat Feb 24 17:42:07 WIB 2024","Sat Feb 24 17:42:07 WIB 2024","263","","API Test","","API Test","Check the Endpoint (Success/200)","Check the Endpoint (Success/200)",""

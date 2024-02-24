@@ -2,7 +2,7 @@ import { expect } from "chai";
 import fetch from "node-fetch";
 import { url } from "../url/url.js";
 import { postRequestHeader } from "../header/requestHeader.js";
-import { registrationRequestBody } from "../body/requestBody.js";
+import { loginRequestBody, registrationRequestBody } from "../body/requestBody.js";
 
 describe('API Test', () =>{
     it('Check the Endpoint (Success/200)', async () =>{
@@ -43,6 +43,28 @@ describe('API Test', () =>{
         expect(output.data).to.have.property('name');
         expect(output.data).to.have.property('email')
 
+    });
+
+    it('Login Existing Member (POST)', async () => {
+        const response = await fetch(`${url}/authentications`, {
+            method: 'POST',
+            headers: postRequestHeader,
+            body: JSON.stringify(loginRequestBody),
+        });
+        const output = await response.json();
+
+        //console.log('Response :', output);
+
+        expect(response.status).to.equal(201);
+        expect(output.data).to.have.property('accessToken');
+        expect(output.data).to.have.property('refreshToken');
+        expect(output.data.user).to.have.property('id');
+        expect(output.data.user).to.have.property('name');
+        expect(output.data.user).to.have.property('role');
+        expect(output.data.user).to.have.property('email');
+        expect(output.data.user).to.have.property('officeId');
+        expect(output.data.user).to.have.property('companyId');
+        expect(output.data.user).to.have.property('company_name');
     });
 
 });
