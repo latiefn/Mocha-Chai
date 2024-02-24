@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2024-02-20T07:29:45.561Z",
-    "end": "2024-02-20T07:29:46.151Z",
-    "duration": 590,
+    "start": "2024-02-23T10:42:10.163Z",
+    "end": "2024-02-23T10:42:10.798Z",
+    "duration": 635,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7a4fc9ae-3c9a-4dc9-bc6d-21aa4a454578",
+      "uuid": "4a0bb68d-9744-4b2d-8360-4c362601f702",
       "title": "",
       "fullFile": "/Users/latief/Documents/chai again/kasiraja/api.js",
       "file": "/kasiraja/api.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2f8d16e8-d882-46c0-9147-d70c5aae5c64",
+          "uuid": "788a1023-c10f-4051-b76c-864a5cd04616",
           "title": "API Test",
           "fullFile": "/Users/latief/Documents/chai again/kasiraja/api.js",
           "file": "/kasiraja/api.js",
@@ -38,7 +38,7 @@
               "title": "Check the Endpoint (Success/200)",
               "fullTitle": "API Test Check the Endpoint (Success/200)",
               "timedOut": false,
-              "duration": 165,
+              "duration": 197,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const response = await fetch(`${url}`);\nconst output = await response.json();\n//console.log('Response :', output);\nexpect(response.status).to.equal(200);\nexpect(output.data).to.have.property('status');\nexpect(output.data).to.have.property('name');\nexpect(output.data).to.have.property('version');",
               "err": {},
-              "uuid": "ad417702-c086-40b0-b53d-1eaf3137b653",
-              "parentUUID": "2f8d16e8-d882-46c0-9147-d70c5aae5c64",
+              "uuid": "d765a713-20b4-4e13-b6b3-960503d44f76",
+              "parentUUID": "788a1023-c10f-4051-b76c-864a5cd04616",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Check the Endpoint (Fail/404)",
               "fullTitle": "API Test Check the Endpoint (Fail/404)",
               "timedOut": false,
-              "duration": 42,
+              "duration": 54,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "const response = await fetch(`${url}/1`);\nconst output = await response.json();\n//console.log('Response: ', output);\nexpect(response.status).to.equal(404);",
               "err": {},
-              "uuid": "35269116-a080-4030-b32a-5912c9c4d5d8",
-              "parentUUID": "2f8d16e8-d882-46c0-9147-d70c5aae5c64",
+              "uuid": "83fd66f9-e9ec-4958-ad7d-afe30c189c30",
+              "parentUUID": "788a1023-c10f-4051-b76c-864a5cd04616",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Register New Member (Post)",
               "fullTitle": "API Test Register New Member (Post)",
               "timedOut": false,
-              "duration": 378,
+              "duration": 380,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,25 +83,25 @@
               "context": null,
               "code": "const response = await fetch(`${url}/registration`, {\n    method: 'POST',\n    headers: postRequestHeader,\n    body: JSON.stringify(registrationRequestBody),\n});\nconst output = await response.json();\n//console.log('Response :', output);\nexpect(response.status).to.equal(201);\nexpect(output).to.have.property('status');\nexpect(output).to.have.property('message');\nexpect(output.data).to.have.property('name');\nexpect(output.data).to.have.property('email')",
               "err": {},
-              "uuid": "9fe7fb41-3f71-4140-963f-2bf91637a722",
-              "parentUUID": "2f8d16e8-d882-46c0-9147-d70c5aae5c64",
+              "uuid": "f3975ee7-0512-4471-89e1-e9a46a3c0899",
+              "parentUUID": "788a1023-c10f-4051-b76c-864a5cd04616",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ad417702-c086-40b0-b53d-1eaf3137b653",
-            "35269116-a080-4030-b32a-5912c9c4d5d8",
-            "9fe7fb41-3f71-4140-963f-2bf91637a722"
+            "d765a713-20b4-4e13-b6b3-960503d44f76",
+            "83fd66f9-e9ec-4958-ad7d-afe30c189c30",
+            "f3975ee7-0512-4471-89e1-e9a46a3c0899"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 585,
+          "duration": 631,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 20000
+          "_timeout": 2000
         }
       ],
       "passes": [],
@@ -111,7 +111,7 @@
       "duration": 0,
       "root": true,
       "rootEmpty": true,
-      "_timeout": 20000
+      "_timeout": 2000
     }
   ],
   "meta": {

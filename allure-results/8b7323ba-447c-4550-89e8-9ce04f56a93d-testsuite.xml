@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1708684274114' stop='1708684289150'>
+    <name>API Test</name>
+    <title>API Test</title>
+    <test-cases>
+        <test-case start='1708684274114' status='broken' stop='1708684279133'>
+            <name>Check the Endpoint (Success/200)</name>
+            <title>Check the Endpoint (Success/200)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timeout of 5000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/latief/Documents/chai again/kasiraja/api.js)</message>
+                <stack-trace>Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/latief/Documents/chai again/kasiraja/api.js)
+                    at listOnTimeout (node:internal/timers:573:17)
+                    at process.processTimers (node:internal/timers:514:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1708684279134' status='broken' stop='1708684284140'>
+            <name>Check the Endpoint (Fail/404)</name>
+            <title>Check the Endpoint (Fail/404)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timeout of 5000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/latief/Documents/chai again/kasiraja/api.js)</message>
+                <stack-trace>Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/latief/Documents/chai again/kasiraja/api.js)
+                    at listOnTimeout (node:internal/timers:573:17)
+                    at process.processTimers (node:internal/timers:514:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1708684284140' status='broken' stop='1708684289149'>
+            <name>Register New Member (Post)</name>
+            <title>Register New Member (Post)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timeout of 5000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/latief/Documents/chai again/kasiraja/api.js)</message>
+                <stack-trace>Error: Timeout of 5000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (/Users/latief/Documents/chai again/kasiraja/api.js)
+                    at listOnTimeout (node:internal/timers:573:17)
+                    at process.processTimers (node:internal/timers:514:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
