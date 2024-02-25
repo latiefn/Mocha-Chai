@@ -31,7 +31,7 @@ Run the test and save the result to mochawesome
 Commit git
 - git add .
 - git commit -m "xxx"
-- git push origin master
+- git push origin main
 
 add new branch
 - git checkout -b new-branch-name
