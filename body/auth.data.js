@@ -6,8 +6,17 @@ export const login = [
             message: "Authentication berhasil ditambahkan"
         },
         payload: {
-            "email": "234-toko5@gmail.com",
-            "password": "Password123",
+            "email": "1691246243-toko5@gmail.com",
+            "password": "password",
+        },
+        expectedUser: {
+            id: "36b3c985-4945-4a46-b585-106a72e353e9",
+            name: "Postman1",
+            role: "admin",
+            email: "1691246243-toko5@gmail.com",
+            officeId: "a7265213-9538-4416-b3f8-7bb27a6f5000",
+            companyId: "a4029120-b118-4da0-b770-a0dcb3784d12",
+            company_name: "Postman1"
         },
     },
     {

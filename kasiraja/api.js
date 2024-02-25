@@ -5,7 +5,7 @@ import { postRequestHeader } from "../header/requestHeader.js";
 import { loginRequestBody, registrationRequestBody } from "../body/requestBody.js";
 import { login } from "../body/auth.data.js";
 import { performLoginTest } from '../url/performlogin.js';
-
+let accessToken;
 describe('API Test', () =>{
     it('Check the Endpoint (Success/200)', async () =>{
         const response = await fetch(`${url}`);
@@ -44,12 +44,40 @@ describe('API Test', () =>{
         expect(output).to.have.property('message');
         expect(output.data).to.have.property('name');
         expect(output.data).to.have.property('email')
-
     });
 
     login.forEach(testCase => {
         it(`should perform login test - ${testCase.case.title}`, async () => {
-            await performLoginTest(url, postRequestHeader, testCase);
+            //await performLoginTest(url, postRequestHeader, testCase);
+            const response = await fetch(`${url}/authentications`, {
+                method: 'POST',
+                headers: postRequestHeader,
+                body: JSON.stringify(testCase.payload),
+            });
+            const output = await response.json();
+
+            // Example assertions based on the expected values from the login array
+            expect(response.status).to.equal(testCase.case.status);
+
+            if (response.status === 201) {
+                // Successful login assertions
+                expect(output.status).to.equal('success');
+                expect(output.message).to.equal(testCase.case.message);
+                expect(output.data).to.have.property('accessToken');
+                expect(output.data).to.have.property('refreshToken');
+                expect(output.data.user).to.deep.equal(testCase.expectedUser);
+
+                // save access Token
+                accessToken = output.data.accessToken;
+
+                // ... add more assertions for user properties if needed
+            } else {
+                // Failed login assertions
+                expect(output.message).to.equal(testCase.case.message);
+                // Add more specific assertions based on the failed case if needed
+            }
+
+
         });
     });
 });
