@@ -3,9 +3,10 @@ import fetch from "node-fetch";
 import { url } from "../url/url.js";
 import { postRequestHeader } from "../header/requestHeader.js";
 import { loginRequestBody, registrationRequestBody } from "../body/requestBody.js";
-import { login } from "../body/auth.data.js";
-import { performLoginTest } from '../url/performlogin.js';
+import { login } from "../body/login.data.js";
+
 let accessToken;
+
 describe('API Test', () =>{
     it('Check the Endpoint (Success/200)', async () =>{
         const response = await fetch(`${url}`);
@@ -47,7 +48,7 @@ describe('API Test', () =>{
     });
 
     login.forEach(testCase => {
-        it(`should perform login test - ${testCase.case.title}`, async () => {
+        it(`Login test - ${testCase.case.title}`, async () => {
             //await performLoginTest(url, postRequestHeader, testCase);
             const response = await fetch(`${url}/authentications`, {
                 method: 'POST',

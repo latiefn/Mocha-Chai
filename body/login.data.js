@@ -1,7 +1,7 @@
 export const login = [
     {
         case: {
-            title: 'Success',
+            title: 'Success Login',
             status: 201,
             message: "Authentication berhasil ditambahkan"
         },
@@ -21,7 +21,7 @@ export const login = [
     },
     {
         case: {
-            title: 'failed password empty',
+            title: 'Failed password empty',
             status: 400,
             message: "\"password\" is not allowed to be empty"
         },
