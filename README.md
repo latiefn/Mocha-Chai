@@ -55,4 +55,3 @@ Pull code
 - git merge --continue (resolve any conflicts && if needed)
 - git status
 
-test from other user
