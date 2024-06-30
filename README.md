@@ -54,3 +54,5 @@ Pull code
 - git pull origin branch-name
 - git merge --continue (resolve any conflicts && if needed)
 - git status
+
+test from other user
